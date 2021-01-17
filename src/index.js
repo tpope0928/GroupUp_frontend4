@@ -19,23 +19,27 @@ function loadPage() {
     playersContainer.textContent = ''
     gamesContainer.textContent = ''
     playerWrapper.textContent = ''
-    gameWrapper.textContent = ''
+    gameWrapper.textContent = '';
 
     createPlayerForm();
     fetchPlayers();
 
     playersContainer.appendChild(createPlayerForm());
 
-    document.querySelector('#create-player').addEventListener("submit", function (e){
+    document.querySelector('#create-player').addEventListener("submit", function (e) {
         e.preventDefault();
 
         let playerInfo = {
-            e.target.elements.name.value = '';
-            e.target.elements.city.value = '';
-            e.target.elements.state.value = '';
+            name: e.target.elements.name.value,
+            city: e.target.elements.city.value,
+            state: e.target.elements.state.value
+        }
+
+        e.target.elements.name.value = '';
+        e.target.elements.city.value = '';
+        e.target.elements.state.value = '';
 
             savePlayer(playerInfo)
-        })
     })
 }
 
