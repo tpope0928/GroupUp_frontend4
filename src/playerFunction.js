@@ -72,10 +72,12 @@ function fetchPlayers() {
                     "Content-Type": "application/json",
                     "Accept": "application/json"
                 },
-                body: JSON.stringify(json())
-                    .then(json => {
-                        let newPlayer = new Player(json.data.attributes)
-                        newPlayer.render()
-                    })
-            }
+                body: JSON.stringify(player)
+            })
+        ).then(res => res.json())
+            .then(json => {
+                let newPlayer = new Player(json.data.attributes)
+                newPlayer.render()
+            })
+
     }

@@ -24,7 +24,7 @@ function loadPage() {
     createPlayerForm();
     fetchPlayers();
 
-    playersContainer.appendChild((createPlayerForm());
+    playersContainer.appendChild(createPlayerForm());
 
     document.querySelector('#create-player').addEventListener("submit", function (e){
         e.preventDefault();
