@@ -21,7 +21,7 @@ class Player {
         const a = document.createElement("a");
 
         a.setAttribute('href', '#')
-        a.innerHTML = '${this.name}'
+        a.innerHTML = `${this.name}`
 
         a.addEventListener("click", function (e){
             playersContainer.textContent = "";
@@ -31,7 +31,7 @@ class Player {
             })
 
             playerFilter.forEach(player => {
-                createPlayerForm(player)
+                createGameForm(player)
 
                 h2.textContent = player.name
                 h4.textContent = "Games"
