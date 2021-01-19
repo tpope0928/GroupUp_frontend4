@@ -39,7 +39,7 @@ function loadPage() {
         e.target.elements.city.value = '';
         e.target.elements.state.value = '';
 
-            savePlayer(playerInfo)
+        savePlayer(playerInfo)
     })
 }
 
