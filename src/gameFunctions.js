@@ -37,7 +37,7 @@ function createGames(player, gamesArray) {
 }
 
 function fetchGames(player_id) {
-    return fetchGames(GAMES_URL)
+    return fetch(GAMES_URL)
         .then(res => res.json())
         .then(game => {
             renderGames(game.data, player_id);
