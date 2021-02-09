@@ -20,7 +20,7 @@ function saveGame(gameData) {
         .then(res => res.json())
         .then(obj => {
             console.log(obj)
-    })
+        })
 }
 
 function renderGames(gamesArray, player_id) {

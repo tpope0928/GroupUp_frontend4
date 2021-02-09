@@ -73,5 +73,5 @@ function addGame(game) {
 
     const gameNameEl = document.createElement("ul")
     gameNameEl.innerHTML = "In Game Name: " + `${game.game_name}`.charAt(0).toUpperCase() + `${game.game_name}`.slice(1)
- }
+}
 

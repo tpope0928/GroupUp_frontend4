@@ -10,10 +10,10 @@ playerWrapper.id = 'player-wrapper'
 gameWrapper.id = 'game-wrapper'
 
 let homeButton = document.querySelector('#home')
-    homeButton.addEventListener("click", function () {
-        gamesContainer.textContent = ''
-        loadPage()
-    })
+homeButton.addEventListener("click", function () {
+    gamesContainer.textContent = ''
+    loadPage()
+})
 
 function loadPage() {
     playersContainer.textContent = ''
@@ -44,4 +44,3 @@ function loadPage() {
 }
 
 loadPage()
-
